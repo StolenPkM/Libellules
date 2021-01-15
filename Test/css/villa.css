@@ -1,0 +1,70 @@
+/* BANNER */
+
+.banner {
+    margin-top: -20px;
+}
+
+.banner .banner-img {
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+
+}
+
+.banner .banner-content {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+.banner .banner-content p {
+    font-weight: bold;
+    margin-top: 40px;
+    width: 75%;
+    float: right;
+}
+
+.banner .banner-content p,
+.banner .banner-content h1 {
+    color: #F1F1F1;
+    text-align: right;
+    margin-right: 40px;
+}
+
+/* Description */
+
+.description {
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(76,224,218,0.54);
+    -moz-box-shadow: 0px 0px 18px 2px rgba(76,224,218,0.54);
+    box-shadow: 0px 0px 18px 2px rgba(76,224,218,0.54);
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.description .description-title {
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.description .description-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.description h1,
+.description p {
+    color: #999999;
+}
+
+/* Equipement */
+
+.stuff {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}

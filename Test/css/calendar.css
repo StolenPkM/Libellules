@@ -1,0 +1,46 @@
+.calendar__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar__table {
+    width: 400px;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.calendar__table td {
+    border: 1px solid #CCC;
+    padding: 10px;
+    width: 11.5%;
+    height: 25%;
+}
+
+.calendar__table--5weeks td {
+    height: 16.66%;
+}
+
+.weekDay {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.othermonth {
+    opacity: 0.3;
+}
+
+.change__date {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
