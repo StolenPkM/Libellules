@@ -77,16 +77,6 @@ class Month {
         }
         return new Month($month, $year);
     }
-
-    public function jumpTo(?int $m = null, ?int $y = null) {
-        if ($m === null) {
-            $m = intval(date('m'));
-        }
-        if ($y === null) {
-            $y = intval(date('Y'));
-        }
-        return new Month($m, $y);
-    }
 }
 
 ?>
