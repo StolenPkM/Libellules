@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if($_SESSION["autoriser"] === "oui") {
+        header("location:../../src/config/session.php");
+        exit();
+    } else {
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,7 +29,7 @@
             <a  class="header-logo" href="../../index.html">Logo</a>
             <nav class="header-menu">
                 <a href="./villa.html">Aperçu</a>
-                <a href="./photos.html">Photos</a>
+                <a href="./photos.php">Photos</a>
                 <a href="./calendar.php">Planning</a>
                 <a href="#">Contact</a>
                 <a href="#">
@@ -64,3 +71,4 @@
     <!-- Formulaire de connexion -->
 </body>
 </html>
+<?php } ?>

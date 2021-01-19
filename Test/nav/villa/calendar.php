@@ -21,16 +21,10 @@
         require '../../src/date/reservation.php';
         require '../../src/config/config.php';
 
-        try {
-            $dbh = new PDO($dsn, $user, $password, $options);
-            $requete = $dbh->prepare("SELECT * FROM reservation");
-            $requete->execute();
-            $result = $requete->fetchAll(PDO::FETCH_ASSOC);
-            $requete->closeCursor();
-
-        } catch (PDOException $e) {
-            echo 'Connexion échouée : ' . $e->getMessage();
-        }
+        $requete = $dbh->prepare("SELECT * FROM reservation_villa");
+        $requete->execute();
+        $result = $requete->fetchAll(PDO::FETCH_ASSOC);
+        $requete->closeCursor();
 
         try {
             $month = new App\Date\Month($_GET["month"] ?? null, $_GET["year"] ?? null);
@@ -52,7 +46,7 @@
             <a  class="header-logo" href="../../index.html">Logo</a>
             <nav class="header-menu">
                 <a href="./villa.html">Aperçu</a>
-                <a href="./photos.html">Photos</a>
+                <a href="./photos.php">Photos</a>
                 <a href="./calendar.php">Planning</a>
                 <a href="#">Contact</a>
                 <a href="./admin.php">
